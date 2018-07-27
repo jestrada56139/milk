@@ -1,0 +1,22 @@
+.title {
+    margin-top: 5%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 65px;
+}
+
+.content {
+    display: flex;
+}
+
+.block {
+    flex: 1;
+    text-align: center;
+}
+
+p {
+    margin: 10%;
+    font-size: 26px;
+}
