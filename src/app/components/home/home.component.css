@@ -44,38 +44,67 @@
 }
 
 
-#slide1{
-    width: 100%;
-    height: 700px;
-    background: url('../../../assets/youthDev.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-}
+
 .container{
     width: 100%
 }
-#slide2{
-    width: 100%;
-    height: 700px;
-    background: url('../../../assets/txtCulture.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    
+
+
+.cup {
+    position: relative;
+    margin-top: 40ex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 180px;
+    border: 6px solid black;
+    border-top: 2px transparent;
+    border-radius: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: url('../../../assets/milk.png');
+    background-repeat: repeat-x;
+    animation: animate 10s linear infinite;
+    box-shadow: 0 0 0 6px black, 0 20px 35px rgba(0,0,0,1) ;
+    background-color: black;
 }
-#slide3{
-    width: 100%;
-    height: 700px;
-    background: url('../../../assets/techCurriculum.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    
+
+.cup:before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 80px;
+    border: 6px solid black;
+    right: -57px;
+    top: 30px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
 }
-#slide4{
-    width: 100%;
-    height: 700px;
-    background: url('../../../assets/ProductDevelopment.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    
+
+@keyframes animate {
+    0% {
+        background-position: 0 100px;
+    }
+    10% {
+        background-position: 0 100px;
+    }
+    40% {
+        background-position: 1000px 10px;
+    }
+    80% {
+        background-position: 2000px 100px;
+    }
+    100% {
+        background-position: 2200px 100px;
+    }
+}
+h1{
+    font-weight: 200;
+}
+.h1{
+    margin-top: -8%;
+    margin-bottom: 18%;
+    font-size: 64px;
+    font-weight: 200;
 }
